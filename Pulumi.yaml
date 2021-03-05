@@ -1,4 +1,4 @@
-name: gcp-go-gke
+name: gke
 runtime: go
 description: Google Kubernetes Engine
 
