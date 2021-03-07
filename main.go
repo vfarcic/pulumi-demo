@@ -23,7 +23,9 @@ func main() {
 		}
 
 		if len(k8sVersion) == 0 {
-			engineVersions, err := container.GetEngineVersions(ctx, &container.GetEngineVersionsArgs{})
+			engineVersions, err := container.GetEngineVersions(ctx, &container.GetEngineVersionsArgs{
+				Location: &location,
+			})
 			if err != nil {
 				return err
 			}
